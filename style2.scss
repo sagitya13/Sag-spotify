@@ -1,0 +1,53 @@
+.timeline-slider:hover, .volume-slider:hover {
+    background-color: blue;
+}
+.timeline-slider,.volume-slider {
+    -webkit-appearance: none;
+}
+.album-flex {
+margin-bottom: 1rem !important;
+}
+
+.albums {
+margin-top: 1rem;
+}
+.sidebar .logo img {
+width: 130px;
+}
+.card-img {
+width: 100%;
+border-radius: 0.35rem;
+}
+
+.card-name {
+margin: 0.25rem 0;
+}
+.volume-controls {
+    width: 20vw;
+  }
+  .timeline-slider:focus,
+  .volume-slider:focus {
+    outline: none;
+  }
+ 
+  .timeline-slider:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+  }
+
+  .spotify-playlists {
+    padding: 20px 40px;
+}
+.spotify-playlists .list .item:hover {
+    background-color: #252525;
+
+}
+.sidebar .navigation ul li .fa {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.sidebar .navigation ul li a:hover {
+    color: #ffffff;
+}
+.sidebar .navigation ul li {
+    padding: 10px 0px;
+}
