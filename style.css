@@ -52,12 +52,11 @@ a {
 .link-flex {
   display: flex;
   justify-content: flex-start;
-  gap: 1rem;
+  gap: 2rem;
   align-items: cover;
   opacity: 0.7;
   font-weight: 600;
   font-size: 0.8rem;
-  cursor: pointer;
 }
 
 .link-flex:hover {
@@ -75,11 +74,13 @@ a {
 }
 
 .library {
+  display:flex;
+  flex-direction: column;
   border-radius: 0.5rem;
   flex: 3;
-  overflow-y: auto;
+
   background-color: var(--grey);
-  padding: 0.5rem 1.5rem;
+ 
 }
 
 .flex-top {
@@ -111,13 +112,37 @@ a {
 }
 
 .chip {
-  margin-top: 0.5rem;
   padding: 0.5rem 0.75rem;
   background-color: var(--light-grey);
   border-radius: 5rem;
   width: fit-content;
   font-weight: normal;
   color: var(--white);
+}
+.list {
+  overflow-x: scroll;
+}
+.list::-webkit-scrollbar{
+  height:0px !important;
+}
+
+.spotify-playlists::-webkit-scrollbar {
+  width: fit-content;
+  height: 20%;
+}
+.list::-webkit-scrollbar-track {
+  background-color: rgba(9, 255, 83, 0.5);
+  border-radius: 10px;
+}
+.list::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgb(15, 15, 16) 0%, rgb(76, 86, 106) 100%);
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(184, 178, 178, 0.5);
+}
+
+.list::-webkit-scrollbar {
+  width: fit-content;
+  height: 0.7rem;
 }
 
 .main-content {
@@ -129,6 +154,45 @@ a {
   padding: 0rem 1rem;
   border-radius: 0.5rem;
   padding-bottom: 6rem;
+}
+.album{
+  display: flex;
+  gap: 7px;
+  flex-direction: column;
+  overflow-y: scroll;
+  font-size: 150px;
+
+}
+.col-flex{
+  font-weight: normal;
+  font-size: 0.8rem; 
+}
+
+.album {
+  overflow-y: scroll;
+}
+.album::-webkit-scrollbar{
+  width:0px !important;
+}
+
+
+
+.albums::-webkit-scrollbar {
+  width: 6px;
+  /* height: 0.7rem; */
+}
+.albums::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+.albums{
+  font-size:10rem ;
+}
+.alb-siz{
+  font-size:30px ;
+  
+
 }
 
 .album-centre {
@@ -145,7 +209,6 @@ a {
 
 .album-name {
   color: var(--white);
-  margin-bottom: 0.35rem !important;
   font-size: 1rem !important;
 }
 
@@ -160,7 +223,13 @@ a {
   z-index: 1000;
  
 }
+.albums{
+  display: flex;
+  gap: 7px; 
+  flex-direction: column;
+  overflow-y: scroll;
 
+}
 .cards-container {
   display: flex;
   gap: 0.5rem;
@@ -186,7 +255,7 @@ a {
 
 .player {
   width: 100%;
-  height: 80px;
+  height: 70px;
   position: fixed;
   bottom: 0;
   background-color: var(--black);
@@ -224,7 +293,7 @@ a {
 }
 
 .timeline-slider {
-  margin: 0 10px;
+  
   width: 40vw;
 }
 
@@ -250,7 +319,6 @@ a {
   width: 16px;
   border-radius: 50%;
   background: #6bc15c;
-  margin-top: -6px;
 }
 
 
@@ -258,17 +326,19 @@ a {
 .spotify-playlists h2{
   color: #ffffff;
   font-size:  22px;
-  margin-bottom: 20px;
+  gap:20px;
 }
 .spotify-playlists .list {
   display: flex;
   gap: 20px;
-  overflow: hidden;
+
+ 
 }
 .spotify-playlists .list .item {
   min-width: 140px;
   width: 160px;
   padding: 15px;
+  /* gap:20px; */
   background-color: #000000;
   border-radius: 6px;
   cursor: pointer;
@@ -278,7 +348,7 @@ a {
 .spotify-playlists .list .item img {
   width: 100%;
   border-radius: 6px;
-  margin-bottom: 10px;
+  gap: 10px;
 }
 .spotify-playlists .list .item .play {
   position: relative;
@@ -300,7 +370,7 @@ a {
 .spotify-playlists .list .item h4 {
   color: #ffffff;
   font-size: 14px;
-  margin-bottom: 10px;
+  gap: 10px;
   font-weight: 600;
   white-space: nowrap;
   overflow: hidden;
@@ -329,7 +399,7 @@ a {
 
 .sidebar .navigation ul {
   list-style: none;
-  margin-top: 20px;
+  gap: 20px;
 }
 
 .sidebar .navigation ul li a {
